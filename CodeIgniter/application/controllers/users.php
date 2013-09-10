@@ -1,12 +1,12 @@
 <?php
 
-class FlickrPhotos extends CI_Controller {
+class Users extends CI_Controller {
 		
 	public function index() {
 		
-	$this->load->model('FlickrPhoto_model');
+	$this->load->model('Userlist_model');
 			
-	$results = $this->FlickrPhoto_model->getPhotos();
+	$results = $this->Userlist_model->getUsers();
 		
 	$data['rows'] = $results['row'];
 

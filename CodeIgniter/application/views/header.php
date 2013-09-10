@@ -17,7 +17,7 @@ if(!empty($_GET["action"])) {
 	if($_GET["action"] == "home") {
 	
 		$result = $users->getAll();
-		$view->getView("views/body.php",$result);	
+		$view->getView("views/body.inc",$result);
 		
 	} if($_GET["action"] == "details") {
 		
@@ -26,6 +26,6 @@ if(!empty($_GET["action"])) {
 	}
 } else {
 	$result = $users->getAll();
-	$view->getView("views/body.php", $result);
+	$view->getView("views/body.inc", $result);
 }
 ?>

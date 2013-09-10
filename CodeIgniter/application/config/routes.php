@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "details";
+$route['default_controller'] = "searchandflick/gallery";
 $route['404_override'] = '';
 
 
