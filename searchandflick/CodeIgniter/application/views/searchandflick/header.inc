@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="../join_files/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="../join_files/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
-<link href="../join_files/css/addons.css" rel="stylesheet" type="text/css">
+<link href="/searchandflick/CodeIgniter/join_files/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/searchandflick/CodeIgniter/join_files/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+<link href="/searchandflick/CodeIgniter/join_files/css/addons.css" rel="stylesheet" type="text/css">
 
 <!-- HTML5 shim for IE backwards compatibility -->
     <!--[if lt IE 9]>

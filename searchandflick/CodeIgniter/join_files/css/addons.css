@@ -1,0 +1,125 @@
+.effect8
+{
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.effect8:after
+{
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+
+.ml {
+    margin-left:10px;
+    margin-top:2px;
+    position:relative;
+    left:5px;
+}
+
+.hero-unit {
+  padding: 30px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 15px;
+  color: inherit;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -4px;
+  color: inherit;
+  float:left;
+}
+
+.hero-unit li {
+  line-height: 15px;
+}
+
+.shadow {
+    text-shadow:1px 1px 1px #000;
+}
+
+.gallery {
+    width:55%;
+    height:auto;
+    overflow:hidden;
+    padding:10px;
+}
+
+.grey {
+    color: #cccccc;
+}
+
+#custom-search-form {
+margin:0;
+margin-top: 5px;
+padding: 0;
+}
+#custom-search-form .search-query {
+padding-right: 3px;
+padding-right: 4px \9;
+padding-left: 3px;
+padding-left: 4px \9;
+/* IE7-8 doesn't have border-radius, so don't indent the padding */
+margin-bottom: 0;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+#custom-search-form button {
+border: 0;
+background: none;
+/** belows styles are working good */
+padding: 2px 5px;
+margin-top: 2px;
+position: relative;
+left: -28px;
+/* IE7-8 doesn't have border-radius, so don't indent the padding */
+margin-bottom: 0;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+.search-query:focus + button {
+z-index: 3;
+}
+
+.up {
+    position:relative;
+    top:-230px;
+}
+
+footer {
+    width:100%;
+    height:5em;
+    background:#000;
+}
