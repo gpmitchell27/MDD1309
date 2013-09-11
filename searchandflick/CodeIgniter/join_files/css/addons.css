@@ -39,8 +39,8 @@
 }
 
 .hero-unit {
-  padding: 30px;
-  margin-bottom: 15px;
+  padding: 2em 2em 6em 2em;
+  margin-bottom: 1em;
   font-size: 18px;
   font-weight: 200;
   line-height: 15px;
@@ -49,15 +49,19 @@
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+  height:auto;
+  overflow-y:auto;
+  overflow-x:hidden;
 }
 
 .hero-unit h1 {
   margin-bottom: 0;
-  font-size: 40px;
+  font-size: 5em;
   line-height: 1;
-  letter-spacing: -4px;
+  letter-spacing: -0.1em;
   color: inherit;
   float:left;
+  margin-left:1em;
 }
 
 .hero-unit li {
@@ -79,40 +83,6 @@
     color: #cccccc;
 }
 
-#custom-search-form {
-margin:0;
-margin-top: 5px;
-padding: 0;
-}
-#custom-search-form .search-query {
-padding-right: 3px;
-padding-right: 4px \9;
-padding-left: 3px;
-padding-left: 4px \9;
-/* IE7-8 doesn't have border-radius, so don't indent the padding */
-margin-bottom: 0;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
-}
-#custom-search-form button {
-border: 0;
-background: none;
-/** belows styles are working good */
-padding: 2px 5px;
-margin-top: 2px;
-position: relative;
-left: -28px;
-/* IE7-8 doesn't have border-radius, so don't indent the padding */
-margin-bottom: 0;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
-}
-.search-query:focus + button {
-z-index: 3;
-}
-
 .up {
     position:relative;
     top:-230px;
@@ -121,5 +91,41 @@ z-index: 3;
 footer {
     width:100%;
     height:5em;
-    background:#000;
+    color:#ddd;
+    position:relative;
+}
+
+.footerleft {
+    padding:0 0 0 30px;
+}
+
+.test2 {
+    height:auto;
+    background: #e9e8e8;
+    padding-bottom:2em;
+}
+
+.test3 {
+    height:450px;
+    background:#ddd;
+}
+
+.test4 {
+    height:450px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.height1 {
+    height:50%;
+}
+
+.marginr {
+    margin-right: 3em;
+    margin-top:0.3em;
+}
+
+.marginl {
+    margin-left:6em;
+    margin-top:0.4em;
 }
