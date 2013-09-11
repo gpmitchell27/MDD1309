@@ -1,12 +1,11 @@
-.effect8
-{
+.effect8 {
   	position:relative;       
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-.effect8:before, .effect8:after
-{
+
+.effect8:before, .effect8:after {
 	content:"";
     position:absolute; 
     z-index:-1;
@@ -56,12 +55,13 @@
 
 .hero-unit h1 {
   margin-bottom: 0;
-  font-size: 5em;
-  line-height: 1;
-  letter-spacing: -0.1em;
+  font-size: 3.2em;
+  line-height: .6;
+  letter-spacing: -0.08em;
   color: inherit;
   float:left;
-  margin-left:1em;
+  margin-left:0.3em;
+  padding-top:0.5em;
 }
 
 .hero-unit li {
@@ -69,7 +69,7 @@
 }
 
 .shadow {
-    text-shadow:1px 1px 1px #000;
+    text-shadow:0px 1px 1px #000;
 }
 
 .gallery {
@@ -81,6 +81,10 @@
 
 .grey {
     color: #cccccc;
+}
+
+.grey2 {
+    color: #999999;
 }
 
 .up {
@@ -101,12 +105,12 @@ footer {
 
 .test2 {
     height:auto;
-    background: #e9e8e8;
+    background: #d2dae0;
     padding-bottom:2em;
 }
 
 .test3 {
-    height:450px;
+    height:100%;
     background:#ddd;
 }
 
@@ -129,3 +133,323 @@ footer {
     margin-left:6em;
     margin-top:0.4em;
 }
+
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+
+.cf:after{
+    clear:both;
+}
+
+.cf{
+    zoom:1;
+}
+
+/* Form wrapper styling */
+.form-wrapper {
+    width: 40em;
+    padding: 15px;
+    margin: 150px auto 50px auto;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+/* Form text input */
+
+.form-wrapper input {
+    width: 40em;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+}
+
+.form-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.form-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.form-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Form submit button */
+.form-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #66cc00;
+    border-radius: 0 3px 3px 0;
+    text-shadow: 0 1px 1px #000;
+}
+
+.form-wrapper button:hover{
+    background: #84e622;
+}
+
+.form-wrapper button:active,
+.form-wrapper button:focus{
+    background: #66cc00;
+    outline: 0;
+}
+
+.form-wrapper button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #66cc00 transparent;
+    top: 12px;
+    left: -6px;
+}
+
+.form-wrapper button:hover:before{
+    border-right-color: #84e622;
+}
+
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before{
+        border-right-color: #66cc00;
+}
+
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}
+/**********************MEDIA QUERIES*****************/
+
+@media screen and (max-width:1168px) {
+.form-wrapper {
+    width: 30em;
+    padding: 15px;
+    margin: 150px auto 50px auto;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+#navsignup {
+    visibility:hidden;
+}
+
+/* Form text input */
+
+.form-wrapper input {
+    width: 28em;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #fff;
+    border-radius: 3px 0 0 3px;
+}
+    .hero-unit h1 {
+      margin-bottom: 0.4em;
+      font-size: 2.4em;
+      line-height: .6;
+      letter-spacing: -0.1em;
+      color: inherit;
+      float:left;
+      margin-left:1em;
+      padding-top:0.5em;
+    }
+}
+@media screen and (max-width:968px) {
+
+.form-wrapper {
+    width: 30em;
+    padding: 15px;
+    margin: 150px auto 50px auto;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+/* Form text input */
+
+.form-wrapper input {
+    width: 28em;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #fff;
+    border-radius: 3px 0 0 3px;
+}
+
+    .hero-unit h1 {
+      margin-bottom: 0.4em;
+      font-size: 2.1em;
+      line-height: .6;
+      letter-spacing: -0.1em;
+      color: inherit;
+      float:left;
+      margin-left:1em;
+      padding-top:0.5em;
+    }
+
+}
+
+	/******iPAD 3 & 4 with Retna*********/
+
+@media screen and (max-width:768px) {
+.form-wrapper {
+    width: 20em;
+    padding: 15px;
+    margin: 150px auto 50px 70px;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+/* Form text input */
+
+.form-wrapper input {
+    width: 16em;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #fff;
+    border-radius: 3px 0 0 3px;
+}
+
+.hero-unit h1 {
+  margin-bottom: 0.4em;
+  font-size: 2.3em;
+  line-height: .6;
+  letter-spacing: -0.1em;
+  color:inherit;
+  float:left;
+  margin-left:1.4em;
+  padding-top:0.5em;
+}
+
+}
+
+
+
+/******iPHONE 5*********/
+
+@media screen and (max-width:568px) {
+.form-wrapper {
+    width: 19em;
+    padding: 15px;
+    margin: 150px auto 50px 50px;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+/* Form text input */
+
+.form-wrapper input {
+    width: 14.8em;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #fff;
+    border-radius: 3px 0 0 3px;
+}
+
+.hero-unit h1 {
+  margin-bottom: 0.4em;
+  font-size: 2.4em;
+  line-height: .6;
+  letter-spacing: -0.1em;
+  color: inherit;
+  float:left;
+  margin-left:0.3em;
+  padding-top:0.5em;
+}
+
+.row-fluid p {
+    display:none;
+}
+
+#pgraphic {
+    display:none;
+}
+
+.hero-unit h1 {
+    margin-left:1em;
+}
+
+}
+
+
+/******iPHONE 2,3,4,4s*********/
+
+@media screen and  (min-width:320px) and (max-width:480px) {
+ /* STYLES GO HERE */}
+
+
+/******iPhone 5 Resolution*******/
+
+Screen Width = 320px (CSS Pixels)
+Screen Height = 568px (CSS Pixels)
+
+Screen Width = 640px (Actual Pixels)
+Screen Height = 1136px (Actual Pixels)
+
+Device-pixel-ratio: 2
+
+
+/******iPhone 4,4s Resolution*******/
+Screen Width = 320px (CSS Pixels)
+Screen Height = 480px (CSS Pixels)
+
+Screen Width = 640px (Actual Pixels)
+Screen Height = 960px (Actual Pixels)
+
+Device-pixel-ratio: 2
+
+
+/*******iPhone 2G/3G/3GS Resolution******/
+
+Screen Width = 320px (CSS Pixels)
+Screen Height = 480px (CSS Pixels)
+
+Screen Width = 320px (Actual Pixels)
+Screen Height = 480px (Actual Pixels)
+
+Device-pixel-ratio: 1

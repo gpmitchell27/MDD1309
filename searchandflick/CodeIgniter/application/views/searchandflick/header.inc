@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width= device-width, initial-scale=1, maximum-scale=1">
 <link href="/searchandflick/CodeIgniter/join_files/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="/searchandflick/CodeIgniter/join_files/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
 <link href="/searchandflick/CodeIgniter/join_files/css/addons.css" rel="stylesheet" type="text/css">
@@ -14,7 +14,7 @@
 <title>Working with Bootstrap</title>
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar navbar-inverse">
     <div class="navbar-inner">
     <div class="container-fluid">
     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
