@@ -3,9 +3,10 @@ require_once 'phpFlickr/phpFlickr.php';
 
 class FlickrPhoto_model extends CI_Model {
 	public function getPhotos() {
+	$photos = array();
 	$api_key = "b092e87f8bda224617a98f3c593f918f";
 	$tag = $_POST['search'];
-	$perPage = 54;
+	$perPage = 25;
 	$url = 'http://api.flickr.com/services/rest/?method=flickr.photos.search';
 	$url.= '&api_key='.$api_key;
 	$url.= '&tags='.$tag;
@@ -17,5 +18,6 @@ class FlickrPhoto_model extends CI_Model {
     		$photos = $response->photos->photo;
 		}
 		return $photos;
-	} // end get photos
+		}
+	 // end get photos
 } // end class

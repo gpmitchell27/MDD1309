@@ -38,8 +38,8 @@
 }
 
 .hero-unit {
-  padding: 2em 2em 6em 2em;
-  margin-bottom: 1em;
+  padding: 2em 2em 2em 2em;
+  margin-bottom: -1.6em;
   font-size: 18px;
   font-weight: 200;
   line-height: 15px;
@@ -48,7 +48,7 @@
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
-  height:auto;
+  height:100%;
   overflow-y:auto;
   overflow-x:hidden;
 }
@@ -148,6 +148,14 @@ footer {
 }
 
 /* Form wrapper styling */
+#search_form {
+    padding-left:1em;
+    position:relative;
+    top:-7em;
+    left:-3em
+}
+
+
 .form-wrapper {
     width: 40em;
     padding: 15px;
@@ -246,8 +254,53 @@ footer {
     border: 0;
     padding: 0;
 }
-/**********************MEDIA QUERIES*****************/
 
+#modal {
+    width:100%;
+    height:100%;
+    padding:20px;
+    background:rgba(0,0,0,.3);
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    position:absolute !important;
+    top:10% !important;
+    left:7% !important;
+    margin-top:-94px !important;
+    margin-left:-180px !important;
+    z-index:101;
+    visibility:hidden;
+}
+
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,.8);
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0;
+}
+/**********************MEDIA QUERIES*****************/
+@media screen and (max-width:1868px) {
+body#signup #sandf {
+   position:relative;
+   left:1.8em;
+}
+#join_btn {
+    left:16.4em;
+}
+}
+
+@media screen and (max-width:1368px) {
+
+body#signup #sandf {
+   position:relative;
+   left:-3.6em;
+}
+}
 @media screen and (max-width:1168px) {
 .form-wrapper {
     width: 30em;
@@ -285,6 +338,14 @@ footer {
       margin-left:1em;
       padding-top:0.5em;
     }
+#join_btn {
+    left:9.4em;
+}
+
+body#login #sandf {
+   position:relative;
+   left:-1.2em;
+}
 }
 @media screen and (max-width:968px) {
 
@@ -311,16 +372,29 @@ footer {
     border-radius: 3px 0 0 3px;
 }
 
-    .hero-unit h1 {
-      margin-bottom: 0.4em;
-      font-size: 2.1em;
-      line-height: .6;
-      letter-spacing: -0.1em;
-      color: inherit;
-      float:left;
-      margin-left:1em;
-      padding-top:0.5em;
-    }
+.hero-unit h1 {
+    margin-bottom: 0.4em;
+    font-size: 2.1em;
+    line-height: .6;
+    letter-spacing: -0.1em;
+    color: inherit;
+    float:left;
+    margin-left:1em;
+    padding-top:0.5em;
+}
+
+body#signup #sandf {
+   position:relative;
+   left:-5.9em;
+}
+#join_btn {
+    left:5.4em;
+}
+
+body#login #sandf {
+   position:relative;
+   left:-1.2em;
+}
 
 }
 
@@ -361,10 +435,18 @@ footer {
   padding-top:0.5em;
 }
 
+body#signup #sandf {
+   position:relative;
+   left:-3.6em;
+}
+#join_btn {
+    left:10.4em;
 }
 
-
-
+body#login #sandf {
+   position:relative;
+   left:5.2em;
+}
 /******iPHONE 5*********/
 
 @media screen and (max-width:568px) {
@@ -414,13 +496,30 @@ footer {
     margin-left:1em;
 }
 
+body#signup #sandf {
+   position:relative;
+   left:-6.1em;
+}
+
+body#login #sandf {
+   position:relative;
+   left:-1.2em;
+}
+
+#join_btn {
+    left:5.4em;
+}
+
 }
 
 
 /******iPHONE 2,3,4,4s*********/
 
-@media screen and  (min-width:320px) and (max-width:480px) {
- /* STYLES GO HERE */}
+@media screen and (max-width: 368px) {
+#join_btn {
+    left:0;
+}
+}
 
 
 /******iPhone 5 Resolution*******/
