@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+/* AJAX, jQuery, PHP form development by Santz Design | www.santzdesign.com */
+
+ /*
+  * CSS Reset by Eric Meyer
+  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ /*
+  * Universal
+  */
+
+html {
+	height: 100%;
+	width: 100%;
+	background: #f2f3f4;
+
+	box-shadow: inset 0 0 25px #000;
+	-webkit-box-shadow: inset 0 0 25px #000;
+}
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+::selection {background: #ffb8d9; }
+::-moz-selection {background: #ffb8d9; }
+
+ /*
+  * Contact Form
+  */
+
+#contact-form {
+	width: 380px;
+	height: 540px;
+	background: url(../img/bg.png);
+	padding: 10px;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	margin-top: -270px;
+
+	box-shadow: 0 0 6px #5c5c5c;
+	-webkit-box-shadow: 0 0 6px #5c5c5c;
+}
+
+#contact-form fieldset {
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 30px 20px 0;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	font: 700 40px/1em 'Ubuntu', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #f03f82;
+	text-shadow: 1px 1px 0 #a6063f;
+	letter-spacing: -1px;
+}
+
+h2 {
+	text-align: center;
+	font: 700 17px/1em 'Ubuntu', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	padding: 0 0 24px 2px;
+	letter-spacing: 1px;
+	color: #26b3e6;
+	text-shadow: 1px 1px 0 #0a6385;
+}
+
+#contact-form .input, #contact-form textarea {
+	appearance: none;
+	-webkit-appearance: none;
+	display: inline-block;
+	font: 400 15px/1em 'Ubuntu', Helvetica, Arial, sans-serif;
+	color: #c8c8c8;
+	outline: none;
+	padding: 8px 14px 7px;
+	margin: 7px 0;
+	border: 0 none;
+	width: 92%;
+
+	border-radius: 4px 10px 4px 10px;
+	-webkit-border-radius: 4px 10px 4px 10px;
+
+	border: 3px solid #f2f2f2;
+
+	transition: border-color 1s ease, color 1s ease;
+	-o-transition:border-color 1s ease, color 1s ease;
+	-moz-transition: border-color 1s ease, color 1s ease;
+	-webkit-transition: border-color 1s ease, color 1s ease;
+}
+
+#contact-form textarea { height: 100px; resize: none; border-radius: 4px; -webkit-border-radius: 4px; }
+
+#contact-form .input:hover, #contact-form textarea:hover {border-color: #f77dab; }
+
+#contact-form .input:focus, #contact-form textarea:focus {
+	border-color: #15ade5;
+	color: #46d6ff;
+}
+
+ /*
+  * Simple Modal
+  */
+
+.simplemodal-overlay {background: #fff; }
+
+#message-sent {
+	width: 360px;
+	height: 160px;
+	background: url(../img/bg.png);
+	padding: 10px;
+	position: relative;
+	overflow: visible;
+
+	box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+}
+
+#message-sent .content {
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	padding-top: 35px;
+}
+
+.inline {
+	display: inline-block;
+	margin: 10px 3px 0;
+}
+
+.modalbox-closer-button {
+	position: absolute;
+	right: 5px;
+	top: 8px;
+	display: inline-block;
+	background: url(../img/close.png) 5px 5px no-repeat;
+	border-right: 0 none;
+	width: 32px;
+	height: 32px;
+
+	transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+
+#message-sent p {
+	text-align: center;
+	font: 700 15px/1.3em 'Ubuntu', Helvetica, Arial, sans-serif;
+	padding: 25px 0 0 0;
+	letter-spacing: 1px;
+	color: #26b3e6;
+	text-shadow: 1px 1px 0 #0a6385, 0 0 75px #cccccc;
+}
+
+ /*
+  * Rest...
+  */
+
+#contact-form .button{width:105px;height:35px;margin:0;display:inline-block;font-family:Arial,'Helvetica',sans-serif;font-size:12px;font-weight:bold;color:#fff;text-decoration:none;text-transform:uppercase;text-align:center;padding-top:3px;position:relative;z-index:0;cursor:pointer;outline:0;border:0 none;border-top-right-radius:5px;border-bottom-right-radius:5px;-moz-border-radius-topright:5px;-moz-border-radius-bottomright:5px;-webkit-border-top-right-radius:5px;-webkit-border-bottom-right-radius:5px}#contact-form .button:active,#contact-form .button:focus{top:3px}#contact-form .before{width:35px;height:35px;margin:0 -4px -12px 0;display:inline-block;padding-top:10px;font-size:16px;font-weight:bold;position:relative;z-index:1;border-top-left-radius:5px;border-bottom-left-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-bottomleft:5px;-webkit-border-top-left-radius:5px;-webkit-border-bottom-left-radius:5px}#contact-form .before:active,#contact-form .before:focus{top:-3px}#contact-form .before span{display:block;height:35px;width:35px}#contact-form .button.light-blue{text-shadow:1px 1px 0 #07526e;border-left:solid 1px #2ab7ec;background:#16b3ec;background:-moz-linear-gradient(top,#16b3ec 0,#0e89b6 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#16b3ec),color-stop(100%,#0e89b6));background:-webkit-linear-gradient(top,#16b3ec 0,#0e89b6 100%);background:-o-linear-gradient(top,#16b3ec 0,#0e89b6 100%);background:-ms-linear-gradient(top,#16b3ec 0,#0e89b6 100%);background:linear-gradient(to bottom,#16b3ec 0,#0e89b6 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#16b3ec',endColorstr='#0e89b6',GradientType=0);box-shadow:inset 0 1px 0 #2ab7ec,0 5px 0 0 #07526e,0 10px 5px #999;-webkit-box-shadow:inset 0 1px 0 #2ab7ec,0 5px 0 0 #07526e,0 10px 5px #999}#contact-form .button.light-blue:active,#contact-form .button.light-blue:focus{box-shadow:inset 0 1px 0 #2ab7ec,0 2px 0 0 #07526e,0 5px 3px #999;-webkit-box-shadow:inset 0 1px 0 #2ab7ec,0 2px 0 0 #07526e,0 5px 3px #999}#contact-form .before.light-blue{color:#8fd1ea;text-shadow:1px 1px 0 #07526e;border-right:solid 1px #07526e;background:#0e8bb8;background:-moz-linear-gradient(top,#0e8bb8 0,#0a5e7e 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#0e8bb8),color-stop(100%,#0a5e7e));background:-webkit-linear-gradient(top,#0e8bb8 0,#0a5e7e 100%);background:-o-linear-gradient(top,#0e8bb8 0,#0a5e7e 100%);background:-ms-linear-gradient(top,#0e8bb8 0,#0a5e7e 100%);background:linear-gradient(to bottom,#0e8bb8 0,#0a5e7e 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e8bb8',endColorstr='#0a5e7e',GradientType=0);box-shadow:inset 0 1px 0 #2ab7ec,0 5px 0 0 #032b3a,0 10px 5px #999;-webkit-box-shadow:inset 0 1px 0 #2ab7ec,0 5px 0 0 #032b3a,0 10px 5px #999}#contact-form .before.light-blue:active,#contact-form .before.light-blue:focus{-webkit-box-shadow:inset 0 1px 0 #2ab7ec,0 5px 0 0 #032b3a,1px 1px 0 0 #044a64,2px 2px 0 0 #044a64,2px 5px 0 0 #044a64,6px 4px 2px #0b698b,0 10px 5px #999;box-shadow:inset 0 1px 0 #2ab7ec,0 5px 0 0 #032b3a,1px 1px 0 0 #044a64,2px 2px 0 0 #044a64,2px 5px 0 0 #044a64,6px 4px 2px #0b698b,0 10px 5px #999}#contact-form .before.light-blue span{background:url(../img/send.png) 5px 0 no-repeat}#contact-form .button.pink{text-shadow:1px 1px 0 #6e073f;border-left:solid 1px #df4491;background:#16b3ec;background:-moz-linear-gradient(top,#fe4e91 0,#b60141 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fe4e91),color-stop(100%,#b60141));background:-webkit-linear-gradient(top,#fe4e91 0,#b60141 100%);background:-o-linear-gradient(top,#fe4e91 0,#b60141 100%);background:-ms-linear-gradient(top,#fe4e91 0,#b60141 100%);background:linear-gradient(to bottom,#fe4e91 0,#b60141 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe4e91',endColorstr='#b60141',GradientType=0);box-shadow:inset 0 1px 0 #ff5c9a,0 5px 0 0 #6e072e,0 10px 5px #999;-webkit-box-shadow:inset 0 1px 0 #ff5c9a,0 5px 0 #6e072e,0 10px 5px #999}#contact-form .button.pink:active,#contact-form .button.pink:focus{box-shadow:inset 0 1px 0 #ff6ea5,0 2px 0 0 #6e0735,0 5px 3px #999;-webkit-box-shadow:inset 0 1px 0 #ff6ea5,0 2px 0 0 #6e0735,0 5px 3px #999}#contact-form .before.pink{color:#8fd1ea;text-shadow:1px 1px 0 #07526e;border-right:solid 1px #710837;background:#0e8bb8;background:-moz-linear-gradient(top,#f80867 0,#9d053a 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#f80867),color-stop(100%,#9d053a));background:-webkit-linear-gradient(top,#f80867 0,#9d053a 100%);background:-o-linear-gradient(top,#f80867 0,#9d053a 100%);background:-ms-linear-gradient(top,#f80867 0,#9d053a 100%);background:linear-gradient(to bottom,#f80867 0,#9d053a 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f80867',endColorstr='#9d053a',GradientType=0);box-shadow:inset 0 1px 0 #f065ca,0 5px 0 0 #3a0322,0 10px 5px #999;-webkit-box-shadow:inset 0 1px 0 #f065ca,0 5px 0 0 #3a0322,0 10px 5px #999}#contact-form .before.pink:active,#contact-form .before.pink:focus{-webkit-box-shadow:inset 0 1px 0 #ec2a85,0 5px 0 0 #3a031f,1px 1px 0 0 #640436,2px 2px 0 0 #640436,2px 5px 0 0 #64042d,6px 4px 2px #6e0043,0 10px 5px #999;box-shadow:inset 0 1px 0 #ec2a85,0 5px 0 0 #3a031f,1px 1px 0 0 #640436,2px 2px 0 0 #640436,2px 5px 0 0 #64042d,6px 4px 2px #6e0043,0 10px 5px #999}#contact-form .before.pink span{background:url(../img/cancel.png) 9px 0 no-repeat}

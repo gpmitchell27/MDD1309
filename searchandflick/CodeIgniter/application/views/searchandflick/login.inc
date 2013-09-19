@@ -5,13 +5,16 @@
 			<div class="span12" id="s12top">
     				<div class="span4 offset4 well">
 						<img id="sflogo" class="effect8" id="sandf" src="/searchandflick/CodeIgniter/join_files/images/sf.png" alt="Search and flick" />
-						<form method="post" action="/searchandflick/CodeIgniter/index.php/gallery" accept-charset="UTF-8">
-							<input class="span4" style="margin-bottom: 15px;" type="text" placeholder="Username" id="username" name="username">
-							<input style="margin-bottom: 15px;" type="password" placeholder="Password" id="password" name="password"><br />
-							<input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
-							<label class="string optional"> Remember me</label>
-							<input class="btn btn-primary btn-block three" type="submit" id="sign-in" value="login" />
-    					</form>
+						<?php echo validation_errors(); ?>
+					   	<?php echo form_open('verifylogin'); ?>
+					     <label for="username">Username:</label>
+					     <input type="text" size="20" id="username" name="username"/>
+					     <br/>
+					     <label for="password">Password:</label>
+					     <input type="password" size="20" id="passowrd" name="password"/>
+					     <br/>
+					     <input type="submit" value="Login"/>
+					   </form>
 					</div> <!-- end span4 offset 3 -->
 			</div> <!-- end row-fluid -->
 		</div> <!-- end row-fluid2 -->

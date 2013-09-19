@@ -16,6 +16,8 @@ class FlickrPhoto_model extends CI_Model {
 	$response = json_decode(file_get_contents($url));
 		if($response->stat == 'ok') {
     		$photos = $response->photos->photo;
+		} else {
+			echo '<span class="error_message"><p>Try search again</p></span>';
 		}
 		return $photos;
 		}

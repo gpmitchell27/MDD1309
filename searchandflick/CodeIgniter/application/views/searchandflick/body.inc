@@ -8,32 +8,35 @@
 						<h1>Search and Flick</h1>
 					</div>
 					<div class="span4 offset3">
-						<form method="post" class="form-wrapper cf pull-left search_form">
-							<input type="text" name="search" placeholder="Search here..." />
-        					<button type="submit" id="button" name="submit">Search</button>
-						</form>
-					</div> <!-- end span4 offset 3 -->
+					<form method="post" id="search_form" name="search_form" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="form-wrapper cf pull-left search_form">
+						<input type="text" name="search" id="search" required/>
+						<button type="submit" name="submit">Search</button>
+						<a href="#" data-reveal-id="myModal">Click to see Photos</a>
+					</form>
+					<div id="myModal" class="reveal-modal">
+						  <?php foreach($photos['photos'] as $photo) {
+								$farmId = $photo->farm;
+								$serverId = $photo->server;
+								$id = $photo->id;
+								$secret = $photo->secret;
+								$title = $photo->title;
+								$imagePathThumbnail = 'http://farm'.$farmId.'.static.flickr.com/'.$serverId.'/'.$id.'_'.$secret.'_s.jpg';
+								$imagePathLarge = 'http://farm'.$farmId.'.static.flickr.com/'.$serverId.'/'.$id.'_'.$secret.'_b.jpg';
+								$image = '<ul><li class="thumbnail pull-right ml">';
+								$image.= '<a href="'.$imagePathLarge.'" target="_blank">';
+								$image.= '<img src="'.$imagePathThumbnail.'" alt="'.$title.'">';
+								$image.= '</a>';
+								$image.= '</li></ul>';
+								echo $image;
+								}
+						  ?>
+								<a class="close-reveal-modal">&#215;</a>
+					</div>
+					<p><span id="error_message"></span></p>
 							<div class="row-fluid" id="row-fluid3">
 								<div class="span12" id="modalblock">
-									<?php
-				/*					if(isset($_POST['search'])) {
-										foreach($photos['photos'] as $photo) {
-										$farmId = $photo->farm;
-										$serverId = $photo->server;
-										$id = $photo->id;
-										$secret = $photo->secret;
-										$title = $photo->title;
-										$imagePathThumbnail = 'http://farm'.$farmId.'.static.flickr.com/'.$serverId.'/'.$id.'_'.$secret.'_s.jpg';
-										$imagePathLarge = 'http://farm'.$farmId.'.static.flickr.com/'.$serverId.'/'.$id.'_'.$secret.'_b.jpg';
-										$image = '<ul><li class="thumbnail pull-right ml">';
-										$image.= '<a href="'.$imagePathLarge.'" target="_blank">';
-										$image.= '<img src="'.$imagePathThumbnail.'" alt="'.$title.'">';
-										$image.= '</a>';
-										$image.= '</li></ul>';
-										echo $image;
-										} //end for
-									} // end if
-									*/?>
+
+
 								</div> <!-- end span12 modal-block <div> -->
 							</div> <!-- end row-fluid3 -->
 				</div> <!-- end row-fluid -->
