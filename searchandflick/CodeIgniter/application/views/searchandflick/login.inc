@@ -3,19 +3,20 @@
 		<div class="row-fluid" id="row-fluid2">
 			<p class="shadow grey2" id="pstyle">An educational application for FullSail University made by Greg Mitchell. Flickr Api to pull images from flickr.com</p>
 			<div class="span12" id="s12top">
-    				<div class="span4 offset4 well">
-						<img id="sflogo" class="effect8" id="sandf" src="/searchandflick/CodeIgniter/join_files/images/sf.png" alt="Search and flick" />
-						<?php echo validation_errors(); ?>
-					   	<?php echo form_open('verifylogin'); ?>
-					     <label for="username">Username:</label>
-					     <input type="text" size="20" id="username" name="username"/>
-					     <br/>
-					     <label for="password">Password:</label>
-					     <input type="password" size="20" id="passowrd" name="password"/>
-					     <br/>
-					     <input type="submit" value="Login"/>
-					   </form>
-					</div> <!-- end span4 offset 3 -->
+    			<div class="span4 offset4 well">
+					<img class="effect8" id="sandf" src="/searchandflick/CodeIgniter/join_files/images/sf.png" alt="Search and flick" />
+						<legend class="center shadow">New to Search and Flick? Sign up!</legend>
+							<div class="centeraddform">
+								<?php echo validation_errors('<p class="error">'); ?>
+								 <?php echo form_open("user/login"); ?>
+								<label for="email">Email:</label>
+								<input type="text" id="email" name="email" class="span9" value="" required/>
+								<label for="password">Password:</label>
+								<input type="password" id="pass" name="pass" class="span9" value="" required/>
+								<input type="submit" class="btn-primary span9" value="Sign in" />
+								<?php echo form_close(); ?>
+						</div>
+				</div> <!-- end span4 offset 3 -->
 			</div> <!-- end row-fluid -->
 		</div> <!-- end row-fluid2 -->
 	</header> <!-- end header -->

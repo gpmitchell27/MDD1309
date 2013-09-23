@@ -36,6 +36,8 @@
 }
 .hero-unit {
   font-size:1.288em;
+  padding:1.5em;
+  margin:0;
 }
 .hero-unit h1 {
   margin-bottom: 0;
@@ -52,6 +54,13 @@
 }
 .hero-unit li {
   line-height: 15px;
+}
+
+.pushleft {
+    margin-left:6.3em;
+}
+.pushleftmore {
+    margin-left:4.0em;
 }
 .shadow {
     text-shadow:0px 1px 1px #000;
@@ -79,7 +88,7 @@
 
 footer {
     width:100%;
-    height:5em;
+    height:2em;
     color: #666666;
     position:relative;
     text-align:center;
@@ -87,7 +96,7 @@ footer {
 }
 
 .footerleft {
-    padding:0 0 0 30px;
+    padding:1.4em 0 0 2.2em;
 }
 
 .test2 {
@@ -157,7 +166,8 @@ footer {
 }
 
 #member_sflogo {
-    margin-bottom:1.2em;margin-left:3.3em;
+    margin-bottom:1.2em;
+    margin-left:3.3em;
 }
 /* Form wrapper styling */
 .search_form {
@@ -169,8 +179,9 @@ footer {
 
 #header_class {
     background:#fff;
-    height:37.3em;
-    overflow:hidden;
+    height:35.3em;
+    overflow-y:auto;
+    overflow-x:hidden;
 }
 
 #error_message {
@@ -179,6 +190,20 @@ footer {
     position:relative;
     top:24em;
     left:-25em;
+}
+
+.movleftlogin {
+    margin-left:12em;
+}
+
+.movleftlogin2 h4 {
+    float:left;
+    position:relative;
+    left:10em;
+}
+
+.center {
+  text-align:center;
 }
 
 .form-wrapper {
@@ -284,14 +309,58 @@ footer {
     padding: 0;
 }
 
+.centerform {
+    margin-left:5.3em;
+}
+
+.centeraddform{
+  margin-left:4.0em;
+
+}
+
+.centerformmore {
+  margin-left:8.3em;
+}
+
+.addforms {
+  padding:1em;
+  margin:1em;
+  border:2px solid #ccc;
+  border-radius:25px;
+  position:relative;
+  left:10em;
+  font-size: .7em;
+}
+
 /**********************MEDIA QUERIES*****************/
 @media screen and (max-width:1868px) {
 body#signup #sandf {
    position:relative;
-   left:1.8em;
+   left:1.3em;
 }
+
+body#signupheader #sandf {
+  position:relative;
+  left:1.7em;
+}
+
+body#loginheader #sandf {
+  position:relative;
+  left:1.2em;
+}
+
+body#login #sandf {
+   position:relative;
+   left:1.2em;
+}
+
 #join_btn {
     left:16.4em;
+}
+
+body#mheader #sandf {
+  position:relative;
+  left:1.2em;
 }
 }
 
@@ -300,6 +369,11 @@ body#signup #sandf {
 body#signup #sandf {
    position:relative;
    left:-3.6em;
+}
+
+body#login #sandf {
+   position:relative;
+   left:.11em;
 }
 }
 @media screen and (max-width:1168px) {
@@ -343,10 +417,6 @@ body#signup #sandf {
     left:9.4em;
 }
 
-body#login #sandf {
-   position:relative;
-   left:-1.2em;
-}
 }
 @media screen and (max-width:968px) {
 

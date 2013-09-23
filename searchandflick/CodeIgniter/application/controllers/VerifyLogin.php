@@ -19,7 +19,7 @@ class VerifyLogin extends CI_Controller {
    if($this->form_validation->run() == FALSE)
    {
      //Field validation failed.&nbsp; User redirected to login page
-	   $this->load->view('searchandflick/login_header.inc');
+	 $this->load->view('searchandflick/login_header.inc');
      $this->load->view('searchandflick/login.inc');
 	 $this->load->view('searchandflick/footer.inc');
    }

@@ -13,7 +13,7 @@
     <![endif]-->
 <title>Working with Bootstrap</title>
 </head>
-<body id="loginheader">
+<body>
 <div class="navbar navbar-inverse">
 	<div class="navbar-inner">
 		<div class="container-fluid">
@@ -22,10 +22,10 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</a>
-			<a class="brand" href="login" name="top">Search and Flick</a>
+			<a class="brand" href="welcome" name="top">Search and Flick</a>
 				<div class="nav-collapse collapse">
 					<ul class="nav">
-						<li><a href="login"><i class="icon-home"></i> Home</a></li>
+						<li><a href="welcome"><i class="icon-home"></i> Home</a></li>
 						<li class="divider-vertical"></li>
 					</ul>
 				</div> <!-- end nav collapse -->

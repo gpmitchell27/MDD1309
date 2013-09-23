@@ -11,25 +11,23 @@
 					<form method="post" id="search_form" name="search_form" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="form-wrapper cf pull-left search_form">
 						<input type="text" name="search" id="search" required/>
 						<button type="submit" name="submit">Search</button>
-						<a href="#" data-reveal-id="myModal">Click to see Photos</a>
+						<a href="body.inc" data-reveal-id="myModal">Click to see Photos</a>
 					</form>
 					<div id="myModal" class="reveal-modal">
-						  <?php foreach($photos['photos'] as $photo) {
-								$farmId = $photo->farm;
-								$serverId = $photo->server;
-								$id = $photo->id;
-								$secret = $photo->secret;
-								$title = $photo->title;
-								$imagePathThumbnail = 'http://farm'.$farmId.'.static.flickr.com/'.$serverId.'/'.$id.'_'.$secret.'_s.jpg';
-								$imagePathLarge = 'http://farm'.$farmId.'.static.flickr.com/'.$serverId.'/'.$id.'_'.$secret.'_b.jpg';
-								$image = '<ul><li class="thumbnail pull-right ml">';
-								$image.= '<a href="'.$imagePathLarge.'" target="_blank">';
-								$image.= '<img src="'.$imagePathThumbnail.'" alt="'.$title.'">';
-								$image.= '</a>';
-								$image.= '</li></ul>';
-								echo $image;
-								}
-						  ?>
+						 <script type="text/template" id="searchresults">
+		<li><img class="<%= tick ? 'tick' : '' %>" src="http://farm<%= farm %>.static.flickr.com/<%= server %>/<%= id %>_<%= secret %>_t.jpg" /><span class="action"></span></li>
+	</script>
+
+	<script type="text/template" id="preview">
+		<img class="<%= tick ? 'tick' : '' %>" src="http://farm<%= farm %>.static.flickr.com/<%= server %>/<%= id %>_<%= secret %>_z.jpg" />
+	</script>
+	<article></article>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/backbone.js"></script>
+	<script src="js/backbone-localstorage.js"></script>
+	<script src="js/script.js"></script>
 								<a class="close-reveal-modal">&#215;</a>
 					</div>
 					<p><span id="error_message"></span></p>

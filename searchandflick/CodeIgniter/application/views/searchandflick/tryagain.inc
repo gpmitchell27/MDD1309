@@ -8,11 +8,15 @@
 					</div>
 					<div class="row-fluid" id="row-fluid3">
 						<div class="span6 offset3">
-							<div class="pushleft">
-								<h2>Welcome Back, <?php echo $user_name; ?>!</h2>
-							</div>
-							<div class="pushleftmore">
-								<a href="home/logout">Logout</a> | <a href="gallery">Continue</a> | <a href="add">Add User</a>
+							<legend style="text-align:center">Your username or password was incorrect, Try again</legend>
+							<div class="centerformmore">
+								<?php echo form_open("user/login"); ?>
+							<label for="email">Email:</label>
+							<input type="text" id="email" name="email" class="span9" value="" required/>
+							<label for="password">Password:</label>
+							<input type="password" id="pass" name="pass" class="span9" value="" required/>
+							<input type="submit" class="btn-primary span9" value="Sign in" />
+							<?php echo form_close(); ?>								
 							</div>
 						</div> <!-- end span12 modal-block <div> -->
 					</div> <!-- end row-fluid3 -->

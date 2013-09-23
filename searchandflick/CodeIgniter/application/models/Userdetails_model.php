@@ -12,8 +12,8 @@ class Userdetails_model extends CI_Model {
 		 
 		 // result query
 		 
-		 $q = $this->db->select('user_id, user_email, user_phone, user_address, user_favorite_color, user_zodiac, user_status, user_favorite_color')
-		 ->from('user_details');
+		 $q = $this->db->select('id, phone, address, favcolor, zodiac, status')
+		 ->from('user');
 		 $ret['d_row'] = $q->get()->result();
 		 return $ret;
 		 //count query

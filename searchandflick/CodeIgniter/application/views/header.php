@@ -16,16 +16,16 @@ if(!empty($_GET["action"])) {
 
 	if($_GET["action"] == "home") {
 	
-		$result = $users->getAll();
+		$result = $user->getAll();
 		$view->getView("views/body.inc",$result);
 		
 	} if($_GET["action"] == "details") {
 		
-		$result = $users->getId($_GET["id"]);
+		$result = $user->getId($_GET["id"]);
 		$view->getView("views/details.php", $result);
 	}
 } else {
-	$result = $users->getAll();
+	$result = $user->getAll();
 	$view->getView("views/body.inc", $result);
 }
 ?>

@@ -5,23 +5,23 @@ class Home extends CI_Controller {
    		parent::__construct();
    	}
 
-	function index() {
+	public function index() {
 		if($this->session->userdata('logged_in')) {
 		 $session_data = $this->session->userdata('logged_in');
-		 $data['username'] = $session_data['username'];
+		 $data['user_name'] = $session_data['user_name'];
 		 $this->load->view('searchandflick/login_header.inc');
 		 $this->load->view('searchandflick/home_view.inc', $data);
 		 $this->load->view('searchandflick/footer.inc');
 		} else {
 		 //If no session, redirect to login page
-		 redirect('login', 'refresh');
+		 redirect('login', 'location');
 		}
  	}
 
-	function logout() {
+	public function logout() {
 		$this->session->unset_userdata('logged_in');
 		session_destroy();
-		redirect('home', 'refresh');
+		redirect('login', 'refresh');
  	}
 
 }

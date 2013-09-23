@@ -8,12 +8,12 @@
 					</div>
 					<div class="row-fluid" id="row-fluid3">
 						<div class="span6 offset3">
-							<div class="pushleft">
-								<h2>Welcome Back, <?php echo $user_name; ?>!</h2>
-							</div>
+							<h2>Welcome Back, <?php echo $this->session->userdata('user_name'); ?>!</h2>
+  							<p class="shadow">This section represents the area that only logged in members can access.</p>
+							<p class="green">What would you like to do?.</p>
 							<div class="pushleftmore">
-								<a href="home/logout">Logout</a> | <a href="gallery">Continue</a> | <a href="add">Add User</a>
-							</div>
+								<a href="logout">Logout</a> | <a href="gallery">Continue</a> | <a href="memberadd">Add User</a> | <a href="deleteuser">Delete User</a> | <a href="showdetails">Show Details</a>
+							</div>						
 						</div> <!-- end span12 modal-block <div> -->
 					</div> <!-- end row-fluid3 -->
 				</div> <!-- end row-fluid -->

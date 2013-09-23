@@ -11,9 +11,9 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-<title>Search and Flick Login Page</title>
+<title>Working with Bootstrap</title>
 </head>
-<body>
+<body id="login">
 <div class="navbar navbar-inverse">
 	<div class="navbar-inner">
 		<div class="container-fluid">
@@ -22,12 +22,12 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</a>
-			<a class="brand" href="#" name="top">Search and Flick</a>
+			<a class="brand" href="login" name="top">Search and Flick</a>
 				<div class="nav-collapse collapse">
 					<ul class="nav">
-						<li><a href="/searchandflick/CodeIgniter/"><i class="icon-home"></i> Home</a></li>
+						<li><a href="login"><i class="icon-home"></i> Home</a></li>
 						<li class="divider-vertical"></li>
-						<li><a href="/searchandflick/CodeIgniter/index.php/signup"><i class="icon-home"></i> Sign-Up</a></li>
+						<li><a href="signup"><i class="icon-home"></i> Sign-Up</a></li>
 						<li class="divider-vertical"></li>
 					</ul>
 				</div> <!-- end nav collapse -->

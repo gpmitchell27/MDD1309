@@ -7,13 +7,9 @@
 						<img class="effect8" id="sandf" src="/searchandflick/CodeIgniter/join_files/images/sf.png" alt="Search and flick" />
 					</div>
 					<div class="row-fluid" id="row-fluid3">
-						<div class="span6 offset3">
-							<div class="pushleft">
-								<h2>Welcome Back, <?php echo $user_name; ?>!</h2>
-							</div>
-							<div class="pushleftmore">
-								<a href="home/logout">Logout</a> | <a href="gallery">Continue</a> | <a href="add">Add User</a>
-							</div>
+						<div class="span6 offset3 well">
+						<legend style="text-align:center">Registration Successful!</legend>
+							<div class="movleftlogin2"><h4><?php echo anchor('logout', 'Logout'); ?> | <?php echo anchor('add', 'Add User'); ?> |&nbsp;<h4><?php echo anchor('gallery', 'Continue'); ?></h4></div>
 						</div> <!-- end span12 modal-block <div> -->
 					</div> <!-- end row-fluid3 -->
 				</div> <!-- end row-fluid -->
