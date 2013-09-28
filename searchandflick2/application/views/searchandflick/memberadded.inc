@@ -10,7 +10,7 @@
 						<div class="span6 offset3 well">
 						<legend style="text-align:center">Member added Successfully</legend>
 							<div class="pushleftmore">
-								<a href="/logout">Logout</a> | <a href="gallery">Continue</a> | <a href="member_signup">Add User</a> | <a href="deleteuser">Delete User</a> | <a href="userdetails">Show Details</a>
+								<a href="/logout">Logout</a> | <a href="gallery">Continue</a> | <a href="member_signup">Add User</a> | <a href="showdetails">Delete User</a> | <a href="showdetails">Show Details</a>
 							</div>
 						</div>	
 						</div> <!-- end span12 modal-block <div> -->
