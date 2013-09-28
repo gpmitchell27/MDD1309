@@ -1,0 +1,635 @@
+.effect8 {
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after {
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.effect8:after
+{
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+.ml {
+    margin-left:10px;
+    margin-top:2px;
+    position:relative;
+    left:5px;
+}
+.hero-unit {
+  font-size:1.288em;
+  padding:1.5em;
+  margin:0;
+}
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 3.2em;
+  line-height: .2;
+  letter-spacing: -0.08em;
+  padding-top:0.5em;
+}
+
+#row-fluid3 {
+    background-color:#fff;
+    height:100%;
+    overflow:hidden;
+}
+.hero-unit li {
+  line-height: 15px;
+}
+
+.pushleft {
+    margin-left:6.3em;
+}
+.pushleftmore {
+    margin-left:4.0em;
+}
+.shadow {
+    text-shadow:0px 1px 1px #000;
+}
+
+.gallery {
+    width:55%;
+    height:auto;
+    overflow:hidden;
+    padding:10px;
+}
+
+.grey {
+    color: #cccccc;
+}
+
+.grey2 {
+    color: #999999;
+}
+
+.up {
+    position:relative;
+    top:-230px;
+}
+
+footer {
+    width:100%;
+    height:2em;
+    color: #666666;
+    position:relative;
+    text-align:center;
+    font-size:1.2em;
+}
+
+.footerleft {
+    padding:1.4em 0 0 2.2em;
+}
+
+.test2 {
+    height:auto;
+    background: #d2dae0;
+    padding-bottom:2em;
+}
+
+.test3 {
+    height:100%;
+    background:#ddd;
+}
+
+.test4 {
+    height:450px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.height1 {
+    height:50%;
+}
+
+.marginr {
+    margin-right: 3em;
+    margin-top:0.3em;
+}
+
+.marginl {
+    margin-left:6em;
+    margin-top:0.4em;
+}
+
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+
+.cf:after{
+    clear:both;
+}
+
+.cf{
+    zoom:1;
+}
+
+#s12top {
+    margin:0 0 0 -0.2em;
+    background:#fff;
+    height:auto;
+    overflow:hidden;
+}
+
+#pstyle {
+    text-align:center;
+    letter-spacing:-0.01em;
+    line-height:1
+}
+
+.three {
+    height:3em;
+}
+
+#sflogo {
+    margin-bottom:1.2em;
+    margin-left:3.3em;
+}
+
+#member_sflogo {
+    margin-bottom:1.2em;
+    margin-left:3.3em;
+}
+/* Form wrapper styling */
+.search_form {
+    padding-left:1em;
+    position:relative;
+    top:-7em;
+    left:-3em
+}
+
+#header_class {
+    background:#fff;
+    height:35.3em;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+#error_message {
+    color:#ff0000;
+    font-weight:bold;
+    position:relative;
+    top:24em;
+    left:-25em;
+}
+
+.movleftlogin {
+    margin-left:12em;
+}
+
+.movleftlogin2 h4 {
+    float:left;
+    position:relative;
+    left:10em;
+}
+
+.center {
+  text-align:center;
+}
+
+.form-wrapper {
+    width: 40em;
+    padding: 15px;
+    margin: 150px auto 50px auto;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+/* Form text input */
+
+.form-wrapper input {
+    width: 40em;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+}
+
+.form-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+
+.form-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+
+.form-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+.green {
+    color: #66cc00;
+    font-weight:bold;
+}
+
+.form-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Form submit button */
+.form-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #66cc00;
+    border-radius: 0 3px 3px 0;
+    text-shadow: 0 1px 1px #000;
+}
+
+.form-wrapper button:hover{
+    background: #84e622;
+}
+
+.form-wrapper button:active,
+.form-wrapper button:focus{
+    background: #66cc00;
+    outline: 0;
+}
+
+.form-wrapper button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #66cc00 transparent;
+    top: 12px;
+    left: -6px;
+}
+
+.form-wrapper button:hover:before{
+    border-right-color: #84e622;
+}
+
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before{
+        border-right-color: #66cc00;
+}
+
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}
+
+.centerform {
+    margin-left:5.3em;
+}
+
+.centeraddform{
+  margin-left:4.0em;
+
+}
+
+.centerformmore {
+  margin-left:8.3em;
+}
+
+.centerdetails {
+  margin-left:18.2em;
+}
+
+.addforms {
+  padding:1em;
+  margin:1em;
+  border:2px solid #ccc;
+  border-radius:25px;
+  position:relative;
+  left:10em;
+  font-size: .7em;
+}
+
+.right {
+  text-align: right;
+}
+
+
+
+/**********************MEDIA QUERIES*****************/
+@media screen and (max-width:1868px) {
+body#signup #sandf {
+   position:relative;
+   left:1.3em;
+}
+
+body#signupheader #sandf {
+  position:relative;
+  left:1.7em;
+}
+
+body#loginheader #sandf {
+  position:relative;
+  left:1.2em;
+}
+
+body#login #sandf {
+   position:relative;
+   left:1.2em;
+}
+
+#join_btn {
+    left:16.4em;
+}
+
+body#mheader #sandf {
+  position:relative;
+  left:1.2em;
+}
+}
+
+@media screen and (max-width:1368px) {
+
+body#signup #sandf {
+   position:relative;
+   left:-3.6em;
+}
+
+body#login #sandf {
+   position:relative;
+   left:.11em;
+}
+}
+@media screen and (max-width:1168px) {
+.form-wrapper {
+    width: 30em;
+    padding: 15px;
+    margin: 150px auto 50px auto;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+#navsignup {
+    visibility:hidden;
+}
+
+/* Form text input */
+
+.form-wrapper input {
+    width: 28em;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #fff;
+    border-radius: 3px 0 0 3px;
+}
+    .hero-unit h1 {
+      margin-bottom: 0.4em;
+      font-size: 2.4em;
+      line-height: .6;
+      letter-spacing: -0.1em;
+      color: inherit;
+      float:left;
+      margin-left:1em;
+      padding-top:0.5em;
+    }
+#join_btn {
+    left:9.4em;
+}
+
+}
+@media screen and (max-width:968px) {
+
+.form-wrapper {
+    width: 30em;
+    padding: 15px;
+    margin: 150px auto 50px auto;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+/* Form text input */
+
+.form-wrapper input {
+    width: 28em;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #fff;
+    border-radius: 3px 0 0 3px;
+}
+
+.hero-unit h1 {
+    margin-bottom: 0.4em;
+    font-size: 2.1em;
+    line-height: .6;
+    letter-spacing: -0.1em;
+    color: inherit;
+    float:left;
+    margin-left:1em;
+    padding-top:0.5em;
+}
+
+body#signup #sandf {
+   position:relative;
+   left:-5.9em;
+}
+#join_btn {
+    left:5.4em;
+}
+
+body#login #sandf {
+   position:relative;
+   left:-1.2em;
+}
+
+}
+
+	/******iPAD 3 & 4 with Retna*********/
+
+@media screen and (max-width:768px) {
+.form-wrapper {
+    width: 20em;
+    padding: 15px;
+    margin: 150px auto 50px 70px;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+/* Form text input */
+
+.form-wrapper input {
+    width: 16em;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #fff;
+    border-radius: 3px 0 0 3px;
+}
+
+.hero-unit h1 {
+  margin-bottom: 0.4em;
+  font-size: 2.3em;
+  line-height: .6;
+  letter-spacing: -0.1em;
+  color:inherit;
+  float:left;
+  margin-left:1.4em;
+  padding-top:0.5em;
+}
+
+body#signup #sandf {
+   position:relative;
+   left:-3.6em;
+}
+#join_btn {
+    left:10.4em;
+}
+
+body#login #sandf {
+   position:relative;
+   left:5.2em;
+}
+/******iPHONE 5*********/
+
+@media screen and (max-width:568px) {
+.form-wrapper {
+    width: 19em;
+    padding: 15px;
+    margin: 150px auto 50px 50px;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+/* Form text input */
+
+.form-wrapper input {
+    width: 14.8em;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #fff;
+    border-radius: 3px 0 0 3px;
+}
+
+.hero-unit h1 {
+  margin-bottom: 0.4em;
+  font-size: 2.4em;
+  line-height: .6;
+  letter-spacing: -0.1em;
+  color: inherit;
+  float:left;
+  margin-left:0.3em;
+  padding-top:0.5em;
+}
+
+.row-fluid p {
+    display:none;
+}
+
+#pgraphic {
+    display:none;
+}
+
+.hero-unit h1 {
+    margin-left:1em;
+}
+
+body#signup #sandf {
+   position:relative;
+   left:-6.1em;
+}
+
+body#login #sandf {
+   position:relative;
+   left:-1.2em;
+}
+
+#join_btn {
+    left:5.4em;
+}
+
+}
+
+
+/******iPHONE 2,3,4,4s*********/
+
+@media screen and (max-width: 368px) {
+#join_btn {
+    left:0;
+}
+}
+
+
+/******iPhone 5 Resolution*******/
+
+Screen Width = 320px (CSS Pixels)
+Screen Height = 568px (CSS Pixels)
+
+Screen Width = 640px (Actual Pixels)
+Screen Height = 1136px (Actual Pixels)
+
+Device-pixel-ratio: 2
+
+
+/******iPhone 4,4s Resolution*******/
+Screen Width = 320px (CSS Pixels)
+Screen Height = 480px (CSS Pixels)
+
+Screen Width = 640px (Actual Pixels)
+Screen Height = 960px (Actual Pixels)
+
+Device-pixel-ratio: 2
+
+
+/*******iPhone 2G/3G/3GS Resolution******/
+
+Screen Width = 320px (CSS Pixels)
+Screen Height = 480px (CSS Pixels)
+
+Screen Width = 320px (Actual Pixels)
+Screen Height = 480px (Actual Pixels)
+
+Device-pixel-ratio: 1
